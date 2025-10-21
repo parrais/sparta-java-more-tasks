@@ -4,6 +4,7 @@ public class BankAccount {
     private String accountNumber;
     private String accountHolder;
     private double balance;
+    private double interestRate = 0.025;
 
     public BankAccount(){}
 
@@ -37,5 +38,9 @@ public class BankAccount {
         System.out.printf("Account number: %s%nHolder name: %s%nBalance: %.2f%n%n", accountNumber, accountHolder, balance);
     }
 
+    void applyInterest() {
+        this.balance = Math.ceil(100 * (balance * (1 + this.interestRate)))/100;
+        System.out.println("Interest applied.");
+    }
 
 }

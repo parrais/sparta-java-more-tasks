@@ -10,12 +10,12 @@ public class AccountApp {
         cosmo.displayInfo();
         archie.displayInfo();
 
-        cosmo.deposit(500);
-        cosmo.displayInfo();
-        cosmo.deposit(0);
-        cosmo.displayInfo();
-        cosmo.deposit(-1);
-        cosmo.displayInfo();
+        percy.deposit(500);
+        percy.displayInfo();
+        percy.deposit(0);
+        percy.displayInfo();
+        percy.deposit(-1);
+        percy.displayInfo();
 
         archie.withdraw(-1);
         archie.displayInfo();
@@ -25,5 +25,12 @@ public class AccountApp {
         archie.displayInfo();
         archie.withdraw(100);
         archie.displayInfo();
+
+        cosmo.applyInterest();
+        cosmo.displayInfo();
+        cosmo.deposit(230.83);
+        cosmo.displayInfo();
+        cosmo.applyInterest();
+        cosmo.displayInfo();
     }
 }
